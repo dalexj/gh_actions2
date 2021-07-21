@@ -11,3 +11,5 @@ runs:
   steps:
     - run: ruby $GITHUB_ACTION_PATH/main.rb
       shell: bash
+      env:
+        ALEX_INPUT: ${{ inputs.alex-input }}

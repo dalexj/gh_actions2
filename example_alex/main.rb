@@ -1,2 +1,3 @@
 puts "Example_Alex"
-p ENV
+p ENV["ALEX_INPUT"]
+p `ls -l`
