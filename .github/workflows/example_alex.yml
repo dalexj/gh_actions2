@@ -1,0 +1,10 @@
+name: Example_Alex in this proj
+
+on: workflow_dispatch
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Example_Alex action
+        uses: ./example_alex
