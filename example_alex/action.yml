@@ -1,0 +1,11 @@
+name: Example_Alex
+description: outputs "Example_Alex" and the input "alex-input" from a ruby file
+  inputs:
+    alex-input:
+      description: alex input
+      required: false
+      default: 'no input given for alex-input'
+
+runs:
+  using: ruby:latest
+  main: main.rb
