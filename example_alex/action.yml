@@ -9,6 +9,5 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-ruby@v1
     - run: ruby $GITHUB_ACTION_PATH/main.rb
+      shell: bash
