@@ -12,4 +12,4 @@ runs:
     - run: ruby $GITHUB_ACTION_PATH/main.rb
       shell: bash
       env:
-        ALEX_INPUT: ${{ inputs.alex-input }}
+        ALEX_INPUT: ${{ inputs.alex-input }} aaa${{ github.repository }}aaa
