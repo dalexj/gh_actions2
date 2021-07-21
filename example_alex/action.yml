@@ -7,5 +7,8 @@ inputs:
     default: 'no input given for alex-input'
 
 runs:
-  using: ruby:latest
-  main: main.rb
+  using: composite
+  container:
+    image: ruby:latest
+  steps:
+    - run: ruby $GITHUB_ACTION_PATH/main.rb
