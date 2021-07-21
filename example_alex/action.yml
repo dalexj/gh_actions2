@@ -8,7 +8,7 @@ inputs:
 
 runs:
   using: composite
-  container:
-    image: ruby:latest
   steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-ruby@v1
     - run: ruby $GITHUB_ACTION_PATH/main.rb

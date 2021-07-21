@@ -6,7 +6,5 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v2
       - name: Run Example_Alex action
-        uses: ./example_alex
+        uses: dalexj/gh_actions2/example_alex@main
